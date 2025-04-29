@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+  overflow: hidden;
+}
+
+.pantalla {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+.pantalla h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.pantalla p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #1f8ef1;
+}
+
+input {
+  padding: 10px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+  width: 250px;
+  background: #222;
+  color: #fff;
+}
+
+button {
+  padding: 12px 24px;
+  margin: 5px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 15px;
+  background: #1f8ef1;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0d6efd;
+}
+
+.opciones button {
+  background: #333;
+  border: 1px solid #1f8ef1;
+}
+
+.opciones button:hover {
+  background: #1f8ef1;
+}
+
+.logo {
+  width: 220px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 10px #f0c420);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.mensaje-final {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+  animation: aparecer 2s ease-in-out infinite alternate;
+}
+
+@keyframes aparecer {
+  from { opacity: 0.2; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
